@@ -16,3 +16,19 @@ body {
     font-size: 20px;
     color: #6D83F2;
 }
+
+.redes {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    margin-top: -55px;
+}
+
+.icones {
+    padding: 1em;
+}
+
+.logo {
+    margin-top: -50px;
+    margin-left: 30px;
+}
