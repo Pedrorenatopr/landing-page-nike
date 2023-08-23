@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <title>NIKE</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <img class="teste" src="Right body (1).png" alt="" height="1200px">
 
+    <div class="logo">
+        <img src="Nike Logo.png" alt="">
+    </div>
+
     <div class="menu">
-        <ul class="menu-lista">
+        <div class="icones">
+            <button class="botao"><span id="burguer" class="material-icons md-48" onclick="clickMenu()" >menu</span></button>
+        </div>
+        <ul class="menu-lista" id="itens">
             <li><a class="menu-item"  href="#">Home</a></li>
             <li><a class="menu-item"  href="#">Boys</a></li>
             <li><a class="menu-item"  href="#">Girls</a></li>
@@ -26,9 +34,7 @@
         <a href="#"><img class="icones" src="youtube icon.png" alt=""></a>
     </div>
 
-    <div class="logo">
-        <img src="Nike Logo.png" alt="">
-    </div>
+
 
     <div class="section-principal">
         <img src="Ellipse 1 (1).png" alt="" width="900px">
@@ -43,5 +49,23 @@
 
     <img class="cores" src="colors switch.png" alt="">
     
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 700) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = 'none' 
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

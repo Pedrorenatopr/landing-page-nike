@@ -75,3 +75,60 @@ span {
     margin-left: 100px;
     margin-top: 150px;
 }
+
+@media screen and  (max-device-width: 700px) {
+
+    .icones {
+        display: flex;
+        justify-content: end;
+        border: none;
+        padding-left: 0;
+    }
+
+    .botao {
+    }
+
+    .logo {
+        margin-top: 0;
+        position: absolute;
+        padding-top: 20px;
+
+    }
+
+    .menu-item {
+        padding: 1em;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu-lista {
+        padding-top: 0;
+        display: none;
+        text-align: center;
+    }
+
+    .teste {
+        display: none;
+    }
+    
+    .section-principal {
+        display: none;
+    }
+
+    .tenis {
+        display: none;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    .texto-tenis {
+        display: none;
+    }
+
+    .texto-principal {
+        display: none;
+    }
+}
