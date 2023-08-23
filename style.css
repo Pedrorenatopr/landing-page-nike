@@ -86,6 +86,7 @@ span {
 
 @media screen and  (max-device-width: 700px) {
 
+
     .icones {
         display: flex;
         justify-content: end;
@@ -130,18 +131,41 @@ span {
     }
 
     .tenis {
-        display: none;
+        position: absolute;
+        margin-left: 0;
+        margin-top: 0;
+        width: 300px;
+    }
+
+    .tenis-principal {
+        display: flex;
+        justify-content: center;
     }
 
     .redes {
-        display: none;
+        display: grid;
+        justify-content: end;
+        padding-left: 300px;
+        padding-right: 0;
+        margin-top: 30px;
     }
+
 
     .texto-tenis {
         display: none;
     }
 
     .texto-principal {
-        display: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #6D83F2;
+        margin-left: 30px;
+        margin-top: 70px;
+    }
+
+    .cores {
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 100px;
     }
 }
